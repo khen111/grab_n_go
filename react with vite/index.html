@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Management System</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Customer Management System</h1>
+    <form id="createForm" class="customer-input">
+      <input type="text" id="customer-name" placeholder="Enter customer name">
+      <span id="nameError" class="hidden error">Name is required</span>
+      <input type="text" id="item" placeholder="Enter item">
+      <span id="itemError" class="hidden error">Item is required</span>
+      <input type="number" id="price" placeholder="Enter price">
+      <span id="priceError" class="hidden error">Price is required</span>
+      <button type="submit">Add Customer</button>
+    </form>
+    <div class="customer-boxes">
+      <div class="customer-details">
+        <h2>Customer Details</h2>
+        <ul id="customer-list">
+          <!-- Customer details will be added here dynamically -->
+        </ul>
+      </div>
+      <div class="customer-summary">
+        <h2>Customer Summary</h2>
+        <ul id="customer-summary-list">
+          <!-- Customer summary will be added here dynamically -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
